@@ -704,4 +704,23 @@
 			</control>
 		</definition>
 	</include>
+	<!-- JAH: Added FreeView/Freesat logo as an include-->
+	<include name="PVRLogo">
+		<param name="left">15</param>
+		<param name="top">15</param>
+		<param name="width">400</param>
+		<param name="height">80</param>
+		<definition>
+			<control type="image">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<aspectratio align="left" aligny="top">keep</aspectratio>
+				<texture>windows/pvr/freeview+freesat.png</texture>
+			</control>
+		</definition>
+	</include>
 </includes>
