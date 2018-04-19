@@ -882,6 +882,8 @@
 					<texture>frame/InfoBar.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
+				<!-- JAH: Added image for Freeview/Freesat at top of some PVR-related windows -->
+				<include condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)">PVRLogo</include>
 				<control type="grouplist">
 					<width>900</width>
 					<include content="TopBarLabels">
