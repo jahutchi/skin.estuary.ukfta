@@ -271,7 +271,17 @@ msgctxt "#31048"
 msgid "Available"
 msgstr ""
 
-#empty strings from id 31049 to 31051
+#: /xml/Font.xml
+msgctxt "#31049"
+msgid "Estuary Default Fonts"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#31050"
+msgid "Press [B]OK[/B] to stop"
+msgstr ""
+
+#empty string with id 31051
 
 #: /xml/Includes.xml
 msgctxt "#31052"
