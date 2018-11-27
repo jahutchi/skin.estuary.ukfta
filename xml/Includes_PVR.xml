@@ -555,7 +555,31 @@
 						<aligny>center</aligny>
 					</control>
 				</rulerdatelayout>
-				<rulerlayout height="45" width="$PARAM[ruler_width]">
+				<rulerlayout height="70" width="$PARAM[ruler_width]" condition="!$PARAM[has_rulerdate_layout]">
+					<control type="label">
+						<top>-10</top>
+						<width>2000</width>
+						<height>70</height>
+						<align>center</align>
+						<aligny>top</aligny>
+						<font>font13</font>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>button_focus</textcolor>
+						<visible>ListItem.Property(DateLabel)</visible>
+					</control>
+					<control type="label">
+						<left>-50</left>
+						<top>27</top>
+						<width>$PARAM[ruler_label_width]</width>
+						<height>30</height>
+						<font>font13</font>
+						<label>$INFO[ListItem.Label]</label>
+						<textoffsetx>10</textoffsetx>
+						<textcolor>button_focus</textcolor>
+						<visible>!ListItem.Property(DateLabel)</visible>
+					</control>
+				</rulerlayout>
+				<rulerlayout height="45" width="$PARAM[ruler_width]" condition="$PARAM[has_rulerdate_layout]">
 					<control type="label">
 						<width>$PARAM[ruler_label_width]</width>
 						<height>45</height>
