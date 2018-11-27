@@ -116,7 +116,7 @@
 							<param name="control_top" value="62"/>
 							<param name="control_onupdown_id" value="11"/>
 							<param name="viewtype_label" value="19298"/>
-							<param name="progress_texture_border" value="0,60,18,14"/>
+							<param name="progress_texture_border" value="0,85,18,14"/>
 							<param name="progress_texture" value="windows/pvr/epg_progress_vertical.png"/>
 							<param name="has_rulerdate_layout" value="false"/>
 							<param name="ruler_width" value="1400"/>
@@ -144,7 +144,7 @@
 							<param name="control_top" value="0"/>
 							<param name="control_onupdown_id" value="52"/>
 							<param name="viewtype_label" value="19301"/>
-							<param name="progress_texture_border" value="0,60,18,14"/>
+							<param name="progress_texture_border" value="0,85,18,14"/>
 							<param name="progress_texture" value="windows/pvr/epg_progress_vertical.png"/>
 							<param name="has_rulerdate_layout" value="false"/>
 							<param name="ruler_width" value="1400"/>
