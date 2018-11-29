@@ -14,7 +14,7 @@
 				<include>OpenClose_Right</include>
 				<include>Visible_Right</include>
 				<control type="group">
-					<top>140</top>
+					<top>115</top>
 					<depth>DepthContentPanel</depth>
 					<control type="image">
 						<left>0</left>
