@@ -110,7 +110,7 @@
 						</focusedlayout>
 					</control>
 					<control type="group" id="63">
-						<include content="EpgGrid">
+						<include condition="!Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)" content="EpgGrid">
 							<param name="control_id" value="50"/>
 							<param name="control_orientation" value="vertical"/>
 							<param name="control_top" value="62"/>
@@ -123,6 +123,22 @@
 							<param name="ruler_label_width" value="365"/>
 							<param name="channel_width" value="350"/>
 							<param name="scrollbar_top" value="110"/>
+							<param name="epg_num_time_blocks" value="34"/>
+						</include>
+						<include condition="Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)" content="EpgGrid">
+							<param name="control_id" value="50"/>
+							<param name="control_orientation" value="vertical"/>
+							<param name="control_top" value="62"/>
+							<param name="control_onupdown_id" value="11"/>
+							<param name="viewtype_label" value="19298"/>
+							<param name="progress_texture_border" value="0,85,18,14"/>
+							<param name="progress_texture" value="windows/pvr/epg_progress_vertical.png"/>
+							<param name="has_rulerdate_layout" value="false"/>
+							<param name="ruler_width" value="1400"/>
+							<param name="ruler_label_width" value="365"/>
+							<param name="channel_width" value="350"/>
+							<param name="scrollbar_top" value="110"/>
+							<param name="epg_num_time_blocks" value="24"/>
 						</include>
 						<include content="EpgGrid">
 							<param name="control_id" value="51"/>
@@ -137,8 +153,9 @@
 							<param name="ruler_label_width" value="150"/>
 							<param name="channel_width" value="310"/>
 							<param name="scrollbar_top" value="168"/>
+							<param name="epg_num_time_blocks" value="34"/>
 						</include>
-						<include content="EpgGrid">
+						<include condition="!Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)" content="EpgGrid">
 							<param name="control_id" value="52"/>
 							<param name="control_orientation" value="vertical"/>
 							<param name="control_top" value="0"/>
@@ -151,6 +168,22 @@
 							<param name="ruler_label_width" value="365"/>
 							<param name="channel_width" value="350"/>
 							<param name="scrollbar_top" value="47"/>
+							<param name="epg_num_time_blocks" value="34"/>
+						</include>
+						<include condition="Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)" content="EpgGrid">
+							<param name="control_id" value="52"/>
+							<param name="control_orientation" value="vertical"/>
+							<param name="control_top" value="0"/>
+							<param name="control_onupdown_id" value="52"/>
+							<param name="viewtype_label" value="19301"/>
+							<param name="progress_texture_border" value="0,85,18,14"/>
+							<param name="progress_texture" value="windows/pvr/epg_progress_vertical.png"/>
+							<param name="has_rulerdate_layout" value="false"/>
+							<param name="ruler_width" value="1400"/>
+							<param name="ruler_label_width" value="365"/>
+							<param name="channel_width" value="350"/>
+							<param name="scrollbar_top" value="47"/>
+							<param name="epg_num_time_blocks" value="24"/>
 						</include>
 						<include content="EpgGrid">
 							<param name="control_id" value="53"/>
@@ -165,6 +198,7 @@
 							<param name="ruler_label_width" value="150"/>
 							<param name="channel_width" value="310"/>
 							<param name="scrollbar_top" value="102"/>
+							<param name="epg_num_time_blocks" value="34"/>
 						</include>
 					</control>
 				</control>

@@ -640,6 +640,24 @@
 					<onclick>Skin.SetString(BottomBarColourButton4TVTimerRulesText)</onclick>
 				</control>
 			</control>
+			<control type="grouplist" id="680">
+				<top>160</top>
+				<left>0</left>
+				<right>0</right>
+				<bottom>140</bottom>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<onup>680</onup>
+				<pagecontrol>60</pagecontrol>
+				<ondown>680</ondown>
+				<visible>Container(9000).HasFocus(6)</visible>
+				<control type="radiobutton" id="68001">
+					<label>$LOCALIZE[31525]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)</selected>
+					<onclick>Skin.ToggleSetting(EPGVerticalGridEnableWiderTimeSlots)</onclick>
+				</control>
+			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
 				<left>0</left>
@@ -719,6 +737,10 @@
 					</item>
 					<item id="5">
 						<label>$LOCALIZE[31519]</label>
+						<onclick>noop</onclick>
+					</item>
+					<item id="6">
+						<label>$LOCALIZE[31524]</label>
 						<onclick>noop</onclick>
 					</item>
 				</content>
