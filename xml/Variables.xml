@@ -548,10 +548,10 @@
 		<value>$LOCALIZE[19021] $LOCALIZE[19017]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRTimersVar">
-		<value condition="Window.IsActive(TVTimers)">$LOCALIZE[19020] / $LOCALIZE[19040]</value>
-		<value condition="Window.IsActive(RadioTimers)">$LOCALIZE[19021] / $LOCALIZE[19040]</value>
-		<value condition="Window.IsActive(TVTimerRules)">$LOCALIZE[19020] / $LOCALIZE[19138]$INFO[Control.GetLabel(29), / ]</value>
-		<value>$LOCALIZE[19021] / $LOCALIZE[19138]$INFO[Control.GetLabel(29), / ]</value>
+		<value condition="Window.IsActive(TVTimers)">$LOCALIZE[19020] $LOCALIZE[19040]</value>
+		<value condition="Window.IsActive(RadioTimers)">$LOCALIZE[19021] $LOCALIZE[19040]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$LOCALIZE[19020] $LOCALIZE[19138]</value>
+		<value>$LOCALIZE[19021] $LOCALIZE[19138]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRSearchVar">
 		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[19020] / $LOCALIZE[137]$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), ]</value>
