@@ -536,7 +536,7 @@
 				<orientation>$PARAM[control_orientation]</orientation>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-				<timeblocks>34</timeblocks>
+				<timeblocks>$PARAM[epg_num_time_blocks]</timeblocks>
 				<rulerunit>6</rulerunit>
 				<onleft>9000</onleft>
 				<onright>60</onright>

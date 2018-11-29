@@ -999,6 +999,16 @@ msgctxt "#31523"
 msgid "Untick"
 msgstr ""
 
+#. Label for the EPG section of Skin Settings
+#: xml/SkinSettings.xml
+msgctxt "#31524"
+msgid "EPG"
+msgstr ""
+
+#. Label for Enable wider time slots in the vertical grid setting
+#: xml/SkinSettings.xml
+msgctxt "#31525"
+msgid "Enable wider time slots in the vertical grid"
 
 #: /xml/DialogPlayerProcessInfo.xml
 #. Label to show the video codec name
