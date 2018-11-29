@@ -536,8 +536,7 @@
 		<value>$LOCALIZE[3]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRChannelsVar">
-		<value condition="Window.IsActive(TVChannels)">$LOCALIZE[19020] / $LOCALIZE[19019] / $INFO[Control.GetLabel(29)]</value>
-		<value>$LOCALIZE[19021] / $LOCALIZE[19019] / $INFO[Control.GetLabel(29)]</value>
+		<value>$INFO[Control.GetLabel(29)]</value>
 	</variable>
 	<variable name="BreadcrumbsPVRGuideVar">
 		<value>$INFO[Control.GetLabel(30)]</value>
