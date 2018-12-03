@@ -1096,3 +1096,116 @@ msgctxt "#31526"
 msgid "Display channel icons instead of channel names"
 msgstr ""
 
+#. Label for EPG Background Colours
+#: xml/SkinSettings.xml
+msgctxt "#31527"
+msgid "EPG Background Colours"
+msgstr ""
+
+#. Label for EPG Background Colour - Use Genre Colours
+#: xml/Variables.xml
+msgctxt "#31528"
+msgid "Use Genre Colours"
+msgstr ""
+
+#. Label for EPG Background Colour 1
+#: xml/Variables.xml
+msgctxt "#31529"
+msgid "Fixed Colour 1"
+msgstr ""
+
+#. Label for EPG Background Colour 2
+#: xml/Variables.xml
+msgctxt "#31530"
+msgid "Fixed Colour 2"
+msgstr ""
+
+#. Label for EPG Background Colour 3
+#: xml/Variables.xml
+msgctxt "#31531"
+msgid "Fixed Colour 3"
+msgstr ""
+
+#. Label for EPG Background Colour 4
+#: xml/Variables.xml
+msgctxt "#31532"
+msgid "Fixed Colour 4"
+msgstr ""
+
+#. Label for EPG Background Colour 5
+#: xml/Variables.xml
+msgctxt "#31533"
+msgid "Fixed Colour 5"
+msgstr ""
+
+#. Label for EPG Background Colour 6
+#: xml/Variables.xml
+msgctxt "#31534"
+msgid "Fixed Colour 6"
+msgstr ""
+
+#. Label for EPG Background Colour 7
+#: xml/Variables.xml
+msgctxt "#31535"
+msgid "Fixed Colour 7"
+msgstr ""
+
+#. Label for EPG Background Colour 8
+#: xml/Variables.xml
+msgctxt "#31536"
+msgid "Fixed Colour 8"
+msgstr ""
+
+#. Label for EPG Background Colour 9
+#: xml/Variables.xml
+msgctxt "#31537"
+msgid "Fixed Colour 9"
+msgstr ""
+
+#. Label for EPG Background Colour 10
+#: xml/Variables.xml
+msgctxt "#31538"
+msgid "Fixed Colour 10"
+msgstr ""
+
+#. Label for EPG Background Colour 11
+#: xml/Variables.xml
+msgctxt "#31539"
+msgid "Fixed Colour 11"
+msgstr ""
+
+#. Label for EPG Background Colour 12
+#: xml/Variables.xml
+msgctxt "#31540"
+msgid "Fixed Colour 12"
+msgstr ""
+
+#. Label for EPG Background Colour 13
+#: xml/Variables.xml
+msgctxt "#31541"
+msgid "Fixed Colour 13"
+msgstr ""
+
+#. Label for EPG Background Colour 14
+#: xml/Variables.xml
+msgctxt "#31542"
+msgid "Fixed Colour 14"
+msgstr ""
+
+#. Label for EPG Background Colour 15
+#: xml/Variables.xml
+msgctxt "#31543"
+msgid "Fixed Colour 15"
+msgstr ""
+
+#. Label for EPG Background Colour 16
+#: xml/Variables.xml
+msgctxt "#31544"
+msgid "Fixed Colour 16"
+msgstr ""
+
+#. Label for EPG Background Colour 17
+#: xml/Variables.xml
+msgctxt "#31545"
+msgid "Fixed Colour 17"
+msgstr ""
