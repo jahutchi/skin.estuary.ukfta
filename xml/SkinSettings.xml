@@ -645,6 +645,12 @@
 					<selected>Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)</selected>
 					<onclick>Skin.ToggleSetting(EPGVerticalGridEnableWiderTimeSlots)</onclick>
 				</control>
+				<control type="radiobutton" id="68002">
+					<label>$LOCALIZE[31526]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(EPGGridEnableChannelIcons)</selected>
+					<onclick>Skin.ToggleSetting(EPGGridEnableChannelIcons)</onclick>
+				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
