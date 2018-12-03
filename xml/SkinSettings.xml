@@ -650,6 +650,42 @@
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(EPGGridEnableChannelIcons)</selected>
 					<onclick>Skin.ToggleSetting(EPGGridEnableChannelIcons)</onclick>
+					<ondown>68090</ondown>
+				</control>
+				<control type="group" id="68090">
+					<control type="button" id="68099">
+						<label>$LOCALIZE[31527]</label>
+						<label2>$VAR[EPGBackgroundColoursText]</label2>
+						<include>DefaultSettingButton</include>
+						<onup>68002</onup>
+						<ondown>68001</ondown>
+						<onclick condition="String.IsEmpty(Skin.String(EPGBackgroundColours)">Skin.SetString(EPGBackgroundColours,1)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),0)">Skin.SetString(EPGBackgroundColours,1)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),1)">Skin.SetString(EPGBackgroundColours,2)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),2)">Skin.SetString(EPGBackgroundColours,3)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),3)">Skin.SetString(EPGBackgroundColours,4)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),4)">Skin.SetString(EPGBackgroundColours,5)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),5)">Skin.SetString(EPGBackgroundColours,6)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),6)">Skin.SetString(EPGBackgroundColours,7)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),7)">Skin.SetString(EPGBackgroundColours,8)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),8)">Skin.SetString(EPGBackgroundColours,9)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),9)">Skin.SetString(EPGBackgroundColours,10)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),10)">Skin.SetString(EPGBackgroundColours,11)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),11)">Skin.SetString(EPGBackgroundColours,12)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),12)">Skin.SetString(EPGBackgroundColours,13)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),13)">Skin.SetString(EPGBackgroundColours,14)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),14)">Skin.SetString(EPGBackgroundColours,15)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),15)">Skin.SetString(EPGBackgroundColours,16)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),16)">Skin.SetString(EPGBackgroundColours,17)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(EPGBackgroundColours),17)">Skin.SetString(EPGBackgroundColours,0)</onclick>
+					</control>
+					<control type="image">
+						<width>260</width>
+						<height>70</height>
+						<right>10</right>
+						<texture>$VAR[EPGBackgroundColoursImage]</texture>
+						<visible>![String.IsEqual(Skin.String(EPGBackgroundColours),0) | String.IsEmpty(Skin.String(EPGBackgroundColours))]</visible>
+					</control>
 				</control>
 			</control>
 			<control type="image">
