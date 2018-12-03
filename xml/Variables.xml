@@ -818,4 +818,44 @@
 		<value condition="VideoPlayer.SubtitlesEnabled">[B]$INFO[VideoPlayer.SubtitlesLanguage][/B]</value>
 		<value>[B]$LOCALIZE[1223][/B]</value>
 	</variable>
+	<variable name="EPGBackgroundColoursText">
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),1)">$LOCALIZE[31529]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),2)">$LOCALIZE[31530]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),3)">$LOCALIZE[31531]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),4)">$LOCALIZE[31532]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),5)">$LOCALIZE[31533]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),6)">$LOCALIZE[31534]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),7)">$LOCALIZE[31535]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),8)">$LOCALIZE[31536]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),9)">$LOCALIZE[31537]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),10)">$LOCALIZE[31538]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),11)">$LOCALIZE[31539]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),12)">$LOCALIZE[31540]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),13)">$LOCALIZE[31541]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),14)">$LOCALIZE[31542]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),15)">$LOCALIZE[31543]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),16)">$LOCALIZE[31544]</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),17)">$LOCALIZE[31545]</value>
+		<value>$LOCALIZE[31528]</value>
+	</variable>
+	<variable name="EPGBackgroundColoursImage">
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),1)">windows/pvr/epg-genres/0.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),2)">windows/pvr/epg-genres/16.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),3)">windows/pvr/epg-genres/32.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),4)">windows/pvr/epg-genres/48.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),5)">windows/pvr/epg-genres/64.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),6)">windows/pvr/epg-genres/80.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),7)">windows/pvr/epg-genres/96.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),8)">windows/pvr/epg-genres/112.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),9)">windows/pvr/epg-genres/128.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),10)">windows/pvr/epg-genres/144.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),11)">windows/pvr/epg-genres/160.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),12)">windows/pvr/epg-genres/176.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),13)">windows/pvr/epg-genres/192.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),14)">windows/pvr/epg-genres/208.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),15)">windows/pvr/epg-genres/224.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),16)">windows/pvr/epg-genres/240.png</value>
+		<value condition="String.IsEqual(Skin.String(EPGBackgroundColours),17)">windows/pvr/epg-genres/256.png</value>
+		<value>$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</value>
+	</variable>
 </includes>
