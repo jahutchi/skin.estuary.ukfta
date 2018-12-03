@@ -110,6 +110,16 @@
 						</focusedlayout>
 					</control>
 					<control type="group" id="63">
+						<control type="label">
+							<height>32</height>
+							<font>font13</font>
+							<aligny>top</aligny>
+							<label>$INFO[ListItem.ChannelName]</label>
+							<animation effect="slide" start="5,0" end="5,46" time="0" condition="Control.IsVisible(50)">Conditional</animation>
+							<animation effect="slide" start="5,0" end="5,-9" time="0" condition="Control.IsVisible(52)">Conditional</animation>
+							<textoffset>10</textoffset>
+							<visible>Skin.HasSetting(EPGGridEnableChannelIcons) + [Control.IsVisible(50) | Control.IsVisible(52)]</visible>
+						</control>
 						<include condition="!Skin.HasSetting(EPGVerticalGridEnableWiderTimeSlots)" content="EpgGrid">
 							<param name="control_id" value="50"/>
 							<param name="control_orientation" value="vertical"/>

@@ -1089,3 +1089,10 @@ msgstr ""
 msgctxt "#31611"
 msgid "System"
 msgstr ""
+
+#. Label for Display channel icons instead of channel names
+#: xml/SkinSettings.xml
+msgctxt "#31526"
+msgid "Display channel icons instead of channel names"
+msgstr ""
+
