@@ -761,8 +761,8 @@
 		<value condition="Skin.HasSetting(BottomBarColourButtonsEnabled) + Skin.HasSetting(BottomBarSkipButtonsEnabled) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">$LOCALIZE[31518]</value>
 	</variable>
 	<variable name="SeasonEpisodeLabel">
-		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
-		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]</value>
+		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,Season , ]$INFO[ListItem.Episode,Episode ]</value>
+		<value>$INFO[ListItem.Season,Season , ]$INFO[ListItem.Episode,Episode ,: ]</value>
 	</variable>
 	<variable name="FirstAiredLabel">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">$LOCALIZE[20473]</value>
