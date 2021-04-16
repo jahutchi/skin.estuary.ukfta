@@ -885,7 +885,7 @@
 				<!-- JAH: Added image for Freeview/Freesat at top of some PVR-related windows -->
 				<include condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)">PVRLogo</include>
 				<control type="grouplist">
-					<width>900</width>
+					<width>1200</width>
 					<include content="TopBarLabels">
 						<param name="breadcrumbs_label" value="$PARAM[breadcrumbs_label]" />
 					</include>
@@ -898,6 +898,20 @@
 					</include>
 					<visible>!Player.HasMedia</visible>
 				</control>
+				<!-- Moved the Breadcrumbs label outside the grouplist when dealing with some PVR Windows -->
+				<control type="label">
+					<label>$PARAM[breadcrumbs_label]</label>
+					<include content="BreadcrumbsLabel">
+						<param name="left" value="0" />
+						<param name="right" value="980" />
+						<param name="top" value="8" />
+						<param name="align" value="right" />
+						<param name="width" value="980" />
+					</include>
+					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<visible>Window.IsActive(TVChannels) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules)</visible>
+				</control>
 				<control type="button">
 					<top>0</top>
 					<width>200</width>
@@ -908,6 +922,7 @@
 					<texturefocus />
 					<texturenofocus />
 				</control>
+				<!-- Default breadcrumbs sublabel (for non-PVR windows) -->
 				<control type="label" id="18900">
 					<top>50</top>
 					<label>$PARAM[sublabel]</label>
@@ -918,7 +933,37 @@
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(799)">Conditional</animation>
+					<visible>![Window.IsActive(TVGuide) | Window.IsActive(RadioGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]</visible>
 				</control>
+				<!-- Breadcrumbs sublabel for the TV Guide -->
+				<control type="label" id="18901">
+					<top>83</top>
+					<label>$PARAM[sublabel]</label>
+					<left>435</left>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>100</height>
+					<width>500</width>
+					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(799)">Conditional</animation>
+					<visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
+				</control>
+				<!-- Breadcrumbs sublabel for other PVR-related windows) -->
+				<control type="label" id="18902">
+					<top>60</top>
+					<label>$PARAM[sublabel]</label>
+					<left>0</left>
+					<right>980</right>
+					<align>right</align>
+					<shadowcolor>text_shadow</shadowcolor>
+					<height>100</height>
+					<width>980</width>
+					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(799)">Conditional</animation>
+					<visible>Window.IsActive(TVChannels) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules)</visible>
+				</control>
+
 				<control type="grouplist">
 					<top>0</top>
 					<align>right</align>
@@ -1087,9 +1132,16 @@
 		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 		<animation effect="slide" end="0,16" time="200" reversible="true" condition="String.IsEmpty(Control.GetLabel(18900))">Conditional</animation>
 		<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(799)">Conditional</animation>
+		<!-- JAH: Made this Include conditional, so we can position the breadcrumbs label differently per window -->
 		<control type="label">
 			<label>$PARAM[breadcrumbs_label]</label>
-			<include>BreadcrumbsLabel</include>
+			<include condition="![Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">BreadcrumbsLabel</include>
+			<include condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)" content="BreadcrumbsLabel">
+				<param name="left" value="400" />
+				<param name="top" value="26" />
+				<param name="width" value="800" />
+			</include>
+			<visible>![Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(TVChannels)]</visible>
 		</control>
 		<control type="label">
 			<label>$INFO[Container.ShowTitle, / ]</label>
@@ -1119,12 +1171,23 @@
 			<visible>Container.Filtered</visible>
 		</control>
 	</include>
+	<!-- Added optional parameters (top, left, right, align) so we can slightly adjust placement -->
 	<include name="BreadcrumbsLabel">
-		<font>font45</font>
-		<shadowcolor>text_shadow</shadowcolor>
-		<top>7</top>
-		<height>100</height>
-		<width>auto</width>
+		<param name="top">7</param>
+		<param name="left">0</param>
+		<param name="right">0</param>
+		<param name="align">left</param>
+		<param name="width">auto</param>
+		<definition>
+			<font>font45</font>
+			<shadowcolor>text_shadow</shadowcolor>
+			<top>$PARAM[top]</top>
+			<left>$PARAM[left]</left>
+			<right>$PARAM[right]</right>
+			<align>$PARAM[align]</align>
+			<height>100</height>
+			<width>$PARAM[width]</width>
+		</definition>
 	</include>
 	<include name="ColoredBackgroundImages">
 		<control type="image">
