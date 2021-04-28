@@ -604,7 +604,7 @@
 						<left>83</left>
 						<top>-2</top>
 						<height>60</height>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.ChannelName]</label>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
@@ -626,7 +626,7 @@
 						<left>83</left>
 						<top>-2</top>
 						<height>60</height>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.ChannelName]</label>
 						<textcolor>button_focus</textcolor>
 						<aligny>center</aligny>
@@ -688,13 +688,13 @@
 						<top>0</top>
 						<height>36</height>
 						<aligny>center</aligny>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
 						<visible>ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive</visible>
 						<left>6</left>
-						<top>35</top>
+						<top>38</top>
 						<width>16</width>
 						<height>16</height>
 						<aspectratio>keep</aspectratio>
@@ -702,7 +702,7 @@
 					</control>
 					<control type="image">
 						<left>6</left>
-						<top>35</top>
+						<top>38</top>
 						<width>16</width>
 						<height>16</height>
 						<texture>$VAR[PVRTimerIcon]</texture>
@@ -735,13 +735,13 @@
 						<top>0</top>
 						<height>36</height>
 						<aligny>center</aligny>
-						<font>font13</font>
+						<font>font14</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
 						<visible>ListItem.IsNew | ListItem.IsPremiere | ListItem.IsFinale | ListItem.IsLive</visible>
 						<left>6</left>
-						<top>35</top>
+						<top>38</top>
 						<width>16</width>
 						<height>16</height>
 						<aspectratio>keep</aspectratio>
@@ -749,7 +749,7 @@
 					</control>
 					<control type="image">
 						<left>6</left>
-						<top>35</top>
+						<top>38</top>
 						<width>16</width>
 						<height>16</height>
 						<texture>$VAR[PVRTimerIcon]</texture>
