@@ -322,11 +322,55 @@
 				<aspectratio aligny="center">keep</aspectratio>
 				<texture>$INFO[Player.Icon]</texture>
 			</control>
+			<control type="label">
+				<left>240</left>
+				<right>340</right>
+				<top>20</top>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.Title]</label>
+				<align>left</align>
+				<font>font36_title</font>
+				<aligny>center</aligny>
+				<visible>String.IsEmpty(PVR.EpgEventIcon)</visible>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<right>30</right>
+				<top>20</top>
+				<height>25</height>
+				<label>[B][COLOR button_focus]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime][/COLOR][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<visible>VideoPlayer.HasEpg</visible>
+				<visible>String.IsEmpty(PVR.EpgEventIcon)</visible>
+			</control>
+			<control type="label">
+				<left>240</left>
+				<right>570</right>
+				<top>20</top>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.Title]</label>
+				<align>left</align>
+				<font>font36_title</font>
+				<aligny>center</aligny>
+				<visible>!String.IsEmpty(PVR.EpgEventIcon)</visible>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<right>260</right>
+				<top>20</top>
+				<height>25</height>
+				<label>[B][COLOR button_focus]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime][/COLOR][/B]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<visible>VideoPlayer.HasEpg</visible>
+				<visible>!String.IsEmpty(PVR.EpgEventIcon)</visible>
+			</control>
 			<control type="textbox">
 				<left>240</left>
-				<top>10</top>
+				<top>60</top>
 				<right>20</right>
-				<height>160</height>
+				<height>110</height>
 				<label fallback="19055">$INFO[VideoPlayer.Plot]</label>
 				<align>justify</align>
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
@@ -334,9 +378,9 @@
 			</control>
 			<control type="textbox">
 				<left>240</left>
-				<top>10</top>
+				<top>60</top>
 				<right>240</right>
-				<height>160</height>
+				<height>110</height>
 				<label fallback="19055">$INFO[VideoPlayer.Plot]</label>
 				<align>justify</align>
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
