@@ -198,6 +198,19 @@
 					<label>$LOCALIZE[19077]</label>
 					<visible>Window.IsActive(MyPVRTimers.xml)</visible>
 				</control>
+				<control type="label" id="6990">
+					<description>Tvheadend extra actions</description>
+					<include>MediaMenuLabelCommon</include>
+					<label>$LOCALIZE[31546]</label>
+					<visible>System.HasAddon(script.tvheadend.apiutils) + [Control.IsVisible(6991) | Control.IsVisible(6992)] + Window.IsActive(TVGuide)</visible>
+				</control>
+				<control type="button" id="6991">
+					<description>Tvheadend refresh epg</description>
+					<include>MediaMenuItemsCommon</include>
+					<label>$LOCALIZE[31547]</label>
+					<visible>System.HasAddon(script.tvheadend.apiutils) + Window.IsActive(TVGuide)</visible>
+					<onclick>RunScript(script.tvheadend.apiutils,refresh-epg)</onclick>
+				</control>
 				<control type="label" id="301">
 					<include>MediaMenuLabelCommon</include>
 					<label>$LOCALIZE[31020]</label>

@@ -1201,3 +1201,15 @@ msgstr ""
 msgctxt "#31545"
 msgid "Fixed Colour 17"
 msgstr ""
+
+#. Label for Extra Actions side menu
+#: xml/Includes_MediaMenu.xml
+msgctxt "#31546"
+msgid "Extra Actions"
+msgstr ""
+
+#. Label for Force EPG Rescan action
+#: xml/Includes_MediaMenu.xml
+msgctxt "#31547"
+msgid "Force EPG Rescan"
+msgstr ""
