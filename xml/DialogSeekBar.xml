@@ -296,7 +296,7 @@
 			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
 			<animation effect="slide" end="0,-20" time="150" condition="VideoPlayer.Content(LiveTV)">conditional</animation>
 			<bottom>0</bottom>
-			<height>380</height>
+			<height>420</height>
 			<control type="label">
 				<left>20</left>
 				<width>80%</width>
@@ -318,7 +318,7 @@
 			<control type="image">
 				<left>0</left>
 				<width>100%</width>
-				<height>240</height>
+				<height>275</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 			</control>
 			<control type="image">
@@ -416,6 +416,38 @@
 				<height>25</height>
 				<label>[COLOR grey]$LOCALIZE[14304]: [/COLOR]$INFO[RDS.GetLine(0)]</label>
 				<visible>RDS.HasRadioText</visible>
+			</control>
+			<control type="label">
+				<left>240</left>
+				<width>1000</width>
+				<top>220</top>
+				<height>25</height>
+				<label>$INFO[PVR.ActStreamDevice,[COLOR grey]$LOCALIZE[31548]: [/COLOR]]</label>
+				<visible>VideoPlayer.HasEpg</visible>
+			</control>
+			<control type="label">
+				<left>1300</left>
+				<top>220</top>
+				<height>25</height>
+				<label>[COLOR grey]$LOCALIZE[19008]: [/COLOR]</label>
+				<visible>VideoPlayer.HasEpg + !String.IsEqual(PVR.ActStreamSNR, 0 %)</visible>
+			</control>
+			<control type="progress">
+				<right>120</right>
+				<width>295</width>
+				<top>230</top>
+				<height>25</height>
+				<reveal>false</reveal>
+				<info>PVR.ActStreamProgrSNR</info>
+				<visible>VideoPlayer.HasEpg + !String.IsEqual(PVR.ActStreamSNR, 0 %)</visible>
+			</control>
+			<control type="label">
+				<right>30</right>
+				<top>220</top>
+				<height>25</height>
+				<align>right</align>
+				<label>[COLOR button_focus]$INFO[PVR.ActStreamSNR][/COLOR]</label>
+				<visible>VideoPlayer.HasEpg + !String.IsEqual(PVR.ActStreamSNR, 0 %)</visible>
 			</control>
 		</control>
 		<control type="group">
