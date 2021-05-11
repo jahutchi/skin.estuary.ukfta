@@ -1221,3 +1221,9 @@ msgstr ""
 msgctxt "#31547"
 msgid "Force EPG Rescan"
 msgstr ""
+
+#. Connection label in the PVR Seek Bar info
+#: xml/DialogSeekBar.xml
+msgctxt "#31548"
+msgid "Connection"
+msgstr ""
