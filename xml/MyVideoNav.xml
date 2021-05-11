@@ -110,6 +110,13 @@
 						<include>MediaMenuLabelCommon</include>
 						<label>$LOCALIZE[31020]</label>
 					</control>
+					<control type="togglebutton" id="999">
+						<description>Check for New Videos</description>
+						<include>MediaMenuItemsCommon</include>
+						<label>$LOCALIZE[31549]</label>
+						<onclick>RunScript(special://home/check-for-new-videos.py)</onclick>
+						<visible>!Container.Content(addons) + String.IsEmpty(Container.PluginName)</visible>
+					</control>
 					<control type="radiobutton" id="16">
 						<description>PartyMode</description>
 						<label>$LOCALIZE[589]</label>
