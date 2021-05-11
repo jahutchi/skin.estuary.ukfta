@@ -1227,3 +1227,9 @@ msgstr ""
 msgctxt "#31548"
 msgid "Connection"
 msgstr ""
+
+#. Label for button to force a check for new videos
+#: xml/MyVideoNav.xml
+msgctxt "#31549"
+msgid "Check for New Videos"
+msgstr ""
