@@ -64,6 +64,16 @@
 						<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
 					</control>
 					<control type="group">
+						<description>List view - large movie poster image</description>
+						<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+						<include content="MovieCertificationRatingImage">
+							<param name="left" value="512" />
+							<param name="top" value="854" />
+							<param name="height" value="84" />
+							<param name="width" value="84" />
+						</include>
+					</control>
+					<control type="group">
 						<left>291</left>
 						<top>950</top>
 						<include content="RatingCircle">
@@ -261,6 +271,16 @@
 					<fadetime>300</fadetime>
 					<texture fallback="DefaultAudio.png" background="true">$VAR[IconWallThumbVar]</texture>
 					<visible>String.IsEqual(ListItem.DBType,song)</visible>
+				</control>
+				<control type="group">
+					<description>WideList view - Movie poster image</description>
+					<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+					<include content="MovieCertificationRatingImage">
+						<param name="left" value="397"/>
+						<param name="top" value="555"/>
+						<param name="height" value="50"/>
+						<param name="width" value="50"/>
+					</include>
 				</control>
 				<control type="group">
 					<left>273</left>

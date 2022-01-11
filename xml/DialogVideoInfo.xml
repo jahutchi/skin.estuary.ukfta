@@ -33,6 +33,16 @@
 					<texture fallback="DefaultVideo.png" background="true">$VAR[InfoDialogPosterVar]</texture>
 				</control>
 				<control type="group">
+					<description>Information view  - Movie - Large movie poster image</description>
+					<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+					<include content="MovieCertificationRatingImage">
+						<param name="left" value="445"/>
+						<param name="top" value="720"/>
+						<param name="height" value="80" />
+						<param name="width" value="80" />
+					</include>
+				</control>
+				<control type="group">
 					<visible>String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,video)</visible>
 					<visible>!String.IsEmpty(ListItem.Art(thumb)) + !String.IsEqual(ListItem.Art(thumb),ListItem.Art(poster))</visible>
 					<control type="image">

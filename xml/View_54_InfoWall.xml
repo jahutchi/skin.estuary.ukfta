@@ -351,6 +351,16 @@
 				<top>-8</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
+			<control type="group">
+				<description>InfoWall View - movie poster</description>
+				<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+				<include content="MovieCertificationRatingImage">
+					<param name="left" value="240"/>
+					<param name="top" value="326"/>
+					<param name="height" value="42"/>
+					<param name="width" value="42"/>
+				</include>
+			</control>
 			<control type="progress">
 				<left>35</left>
 				<top>365</top>
