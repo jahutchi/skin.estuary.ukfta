@@ -1082,3 +1082,8 @@ msgctxt "#31552"
 msgid "Check for New Downloads"
 msgstr ""
 
+#. Label for option to show movie certification rating images
+#: /xml/SkinSettings.xml
+msgctxt "#31553"
+msgid "Show movie certification rating images"
+msgstr ""

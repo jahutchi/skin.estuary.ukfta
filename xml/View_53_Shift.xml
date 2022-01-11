@@ -73,6 +73,16 @@
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="group">
+							<description>Shift View  - Non-focused images</description>
+							<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+							<include content="MovieCertificationRatingImage">
+								<param name="left" value="275"/>
+								<param name="top" value="495"/>
+								<param name="height" value="54"/>
+								<param name="width" value="54"/>
+							</include>
+						</control>
 						<control type="textbox">
 							<left>20</left>
 							<top>603</top>
@@ -101,6 +111,16 @@
 							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="group">
+							<description>Shift View - Focused image</description>
+							<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+							<include content="MovieCertificationRatingImage">
+								<param name="left" value="275"/>
+								<param name="top" value="495"/>
+								<param name="height" value="54"/>
+								<param name="width" value="54"/>
+							</include>
 						</control>
 						<control type="textbox">
 							<left>20</left>
