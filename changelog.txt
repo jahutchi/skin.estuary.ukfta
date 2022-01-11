@@ -7,6 +7,7 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
+v3.1.1: Added option to show US/UK certification rating icons for films (thanks boredazfcuk)
 v3.1.0: Updates from Kodi Matrix 19.1
   - Merged Matrix 19.1 Estuary changes (upto commit: c06bb00)
 v3.0.0: Initial release for Matrix, based on the standard esturary skin with the following customisations:

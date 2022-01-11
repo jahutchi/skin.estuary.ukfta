@@ -67,6 +67,15 @@
 					<onclick>Skin.SelectBool(31024, 38018|circle_userrating, 563|circle_rating, 16018|circle_none)</onclick>
 					<label2>$VAR[RatingSettingLabel2Var]</label2>
 				</control>
+				<control type="button" id="708">
+					<label>$LOCALIZE[31552]</label>
+					<include>DefaultSettingButton</include>
+					<label2>$VAR[MovieCertificationRatingLongCountryVar]</label2>
+					<onclick condition="String.IsEmpty(show_moviecertificationrating)">Skin.SetString(show_moviecertificationrating,gb)</onclick>
+					<onclick condition="Skin.String(show_moviecertificationrating,$LOCALIZE[231])">Skin.SetString(show_moviecertificationrating,gb)</onclick>
+					<onclick condition="Skin.String(show_moviecertificationrating,gb)">Skin.SetString(show_moviecertificationrating,us)</onclick>
+					<onclick condition="Skin.String(show_moviecertificationrating,us)">Skin.SetString(show_moviecertificationrating,$LOCALIZE[231])</onclick>
+				</control>
 				<control type="button" id="707">
 					<label>$LOCALIZE[31164]</label>
 					<include>DefaultSettingButton</include>

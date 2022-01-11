@@ -36,6 +36,16 @@
 					<aspectratio align="center" aligny="bottom">scale</aspectratio>
 				</control>
 				<control type="group">
+					<description>Fanart view - Movie fanart image</description>
+					<visible>!Skin.String(show_moviecertificationrating,$LOCALIZE[231]) + String.IsEqual(ListItem.DbType,movie)</visible>
+					<include content="MovieCertificationRatingImage">
+						<param name="left" value="1111"/>
+						<param name="top" value="670"/>
+						<param name="height" value="84" />
+						<param name="width" value="84" />
+					</include>
+				</control>
+				<control type="group">
 					<left>600</left>
 					<top>82</top>
 					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
