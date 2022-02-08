@@ -5,6 +5,7 @@ This is a slightly modified version of the default "Estuary" skin.
 Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
 Also includes integration with the script.tvheadend.apiutils addon.
 
+v2.0.10: Backport from Nexus: add infoupdate values to PVR item layouts to make auto update of EPG event progress and programme changes work
 v2.0.9: Added option to show US/UK certification rating icons for films (thanks boredazfcuk)
 v2.0.8: Added button to check for new downloads
 v2.0.7: Updates for Kodi Leia 18.9

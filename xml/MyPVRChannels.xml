@@ -26,7 +26,7 @@
 					<viewtype label="535">list</viewtype>
 					<preloaditems>1</preloaditems>
 					<pagecontrol>73</pagecontrol>
-					<focusedlayout height="90">
+					<focusedlayout height="90" infoupdate="5000">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -92,7 +92,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="90">
+					<itemlayout height="90" infoupdate="5000">
 						<control type="image">
 							<right>20</right>
 							<top>10</top>
@@ -169,7 +169,7 @@
 					<viewtype label="535">list</viewtype>
 					<preloaditems>1</preloaditems>
 					<pagecontrol>73</pagecontrol>
-					<focusedlayout height="70">
+					<focusedlayout height="70" infoupdate="5000">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -224,7 +224,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
-					<itemlayout height="70">
+					<itemlayout height="70" infoupdate="5000">
 						<control type="progress">
 							<right>10</right>
 							<top>25</top>
