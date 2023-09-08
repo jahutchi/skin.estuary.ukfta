@@ -651,6 +651,117 @@
 		<value condition="ListItem.HasTimer">icons/pvr/PVR-HasTimer.png</value>
 		<value condition="ListItem.IsPlayable">icons/pvr/PVR-HasArchive.png</value>
 	</variable>
+	<!-- JAH: Added support for customised R,G,Y,B, and SkipForward/SkipBackward button tips -->
+	<variable name="BottomBarColourButton1">
+		<value condition="String.IsEmpty(Skin.String(BottomBarColourButton1))">Red</value>
+		<value>$INFO[Skin.String(BottomBarColourButton1)]</value>
+	</variable>
+	<variable name="BottomBarColourButton1ColourText">
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton1),Red)">$LOCALIZE[31513]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton1),Green)">$LOCALIZE[31514]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton1),Yellow)">$LOCALIZE[31515]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton1),Blue)">$LOCALIZE[31516]</value>
+		<value>$LOCALIZE[31513]</value>
+	</variable>
+	<variable name="BottomBarColourButton1Image">
+		<value>icons/pvr/$VAR[BottomBarColourButton1]Button.png</value>
+	</variable>
+	<variable name="BottomBarColourButton2">
+		<value condition="String.IsEmpty(Skin.String(BottomBarColourButton2))">Green</value>
+		<value>$INFO[Skin.String(BottomBarColourButton2)]</value>
+	</variable>
+	<variable name="BottomBarColourButton2ColourText">
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton2),Red)">$LOCALIZE[31513]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton2),Green)">$LOCALIZE[31514]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton2),Yellow)">$LOCALIZE[31515]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton2),Blue)">$LOCALIZE[31516]</value>
+		<value>$LOCALIZE[31514]</value>
+	</variable>
+	<variable name="BottomBarColourButton2Image">
+		<value>icons/pvr/$VAR[BottomBarColourButton2]Button.png</value>
+	</variable>
+	<variable name="BottomBarColourButton3">
+		<value condition="String.IsEmpty(Skin.String(BottomBarColourButton3))">Yellow</value>
+		<value>$INFO[Skin.String(BottomBarColourButton3)]</value>
+	</variable>
+	<variable name="BottomBarColourButton3ColourText">
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton3),Red)">$LOCALIZE[31513]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton3),Green)">$LOCALIZE[31514]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton3),Yellow)">$LOCALIZE[31515]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton3),Blue)">$LOCALIZE[31516]</value>
+		<value>$LOCALIZE[31515]</value>
+	</variable>
+	<variable name="BottomBarColourButton3Image">
+		<value>icons/pvr/$VAR[BottomBarColourButton3]Button.png</value>
+	</variable>
+	<variable name="BottomBarColourButton4">
+		<value condition="String.IsEmpty(Skin.String(BottomBarColourButton4))">Blue</value>
+		<value>$INFO[Skin.String(BottomBarColourButton4)]</value>
+	</variable>
+	<variable name="BottomBarColourButton4ColourText">
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton4),Red)">$LOCALIZE[31513]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton4),Green)">$LOCALIZE[31514]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton4),Yellow)">$LOCALIZE[31515]</value>
+		<value condition="String.IsEqual(Skin.String(BottomBarColourButton4),Blue)">$LOCALIZE[31516]</value>
+		<value>$LOCALIZE[31516]</value>
+	</variable>
+	<variable name="BottomBarColourButton4Image">
+		<value>icons/pvr/$VAR[BottomBarColourButton4]Button.png</value>
+	</variable>
+	<variable name="BottomBarColourButton1Text">
+		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton1TVGuideText)]</value>
+		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton1RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31521]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,GroupUngroup)">$LOCALIZE[31520]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31523]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton1TVRecordingsText,TickUntick)">$LOCALIZE[31522]</value>
+		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton1TVRecordingsText)]</value>
+		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton1TVTimersText)]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton1TVTimerRulesText)]</value>
+	</variable>
+	<variable name="BottomBarColourButton2Text">
+		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton2TVGuideText)]</value>
+		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton2RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31521]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,GroupUngroup)">$LOCALIZE[31520]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31523]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton2TVRecordingsText,TickUntick)">$LOCALIZE[31522]</value>
+		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton2TVRecordingsText)]</value>
+		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton2TVTimersText)]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton2TVTimerRulesText)]</value>
+	</variable>
+	<variable name="BottomBarColourButton3Text">
+		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton3TVGuideText)]</value>
+		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton3RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31521]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,GroupUngroup)">$LOCALIZE[31520]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31523]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton3TVRecordingsText,TickUntick)">$LOCALIZE[31522]</value>
+		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton3TVRecordingsText)]</value>
+		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton3TVTimersText)]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton3TVTimerRulesText)]</value>
+	</variable>
+	<variable name="BottomBarColourButton4Text">
+		<value condition="Window.IsActive(TVGuide)">$INFO[Skin.String(BottomBarColourButton4TVGuideText)]</value>
+		<value condition="Window.IsActive(RadioGuide)">$INFO[Skin.String(BottomBarColourButton4RadioGuideText)]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,GroupUngroup) + String.Contains(Control.GetLabel(5),*)">$LOCALIZE[31521]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,GroupUngroup)">$LOCALIZE[31520]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,TickUntick) + ListItem.IsParentFolder"></value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,TickUntick) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$LOCALIZE[31523]</value>
+		<value condition="Window.IsActive(TVRecordings) + Skin.String(BottomBarColourButton4TVRecordingsText,TickUntick)">$LOCALIZE[31522]</value>
+		<value condition="Window.IsActive(TVRecordings)">$INFO[Skin.String(BottomBarColourButton4TVRecordingsText)]</value>
+		<value condition="Window.IsActive(TVTimers)">$INFO[Skin.String(BottomBarColourButton4TVTimersText)]</value>
+		<value condition="Window.IsActive(TVTimerRules)">$INFO[Skin.String(BottomBarColourButton4TVTimerRulesText)]</value>
+	</variable>
+	<variable name="BottomBarSkipBackButtonText">
+		<value condition="Skin.HasSetting(BottomBarColourButtonsEnabled) + Skin.HasSetting(BottomBarSkipButtonsEnabled) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">$LOCALIZE[31517]</value>
+	</variable>
+	<variable name="BottomBarSkipForwardButtonText">
+		<value condition="Skin.HasSetting(BottomBarColourButtonsEnabled) + Skin.HasSetting(BottomBarSkipButtonsEnabled) + [Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)]">$LOCALIZE[31518]</value>
+	</variable>
 	<variable name="SeasonEpisodeLabel">
 		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
 		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]</value>

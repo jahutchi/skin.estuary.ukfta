@@ -867,6 +867,138 @@ msgctxt "#31501"
 msgid "- Label Text"
 msgstr ""
 
+#. Label for Enable Remote Button Tips
+#: /xml/SkinSettings.xml
+msgctxt "#31502"
+msgid "Enable Remote Button Tips"
+msgstr ""
+
+#. Label for Enabling Skip Back and Skip Forward Remote Button Tips
+#: /xml/SkinSettings.xml
+msgctxt "#31503"
+msgid "Enable Skip Back (-12h) and Forward (+12h) Button Tips in the EPG"
+msgstr ""
+
+#. Label for Tip Button 1 Colour
+#: /xml/SkinSettings.xml
+msgctxt "#31504"
+msgid "Tip Button 1 Colour"
+msgstr ""
+
+#. Label for Tip Button 2 Colour
+#: /xml/SkinSettings.xml
+msgctxt "#31505"
+msgid "Tip Button 2 Colour"
+msgstr ""
+
+#. Label for Tip Button 3 Colour
+#: /xml/SkinSettings.xml
+msgctxt "#31506"
+msgid "Tip Button 3 Colour"
+msgstr ""
+
+#. Label for Tip Button 4 Colour
+#: /xml/SkinSettings.xml
+msgctxt "#31507"
+msgid "Tip Button 4 Colour"
+msgstr ""
+
+#. Label for TV Guide Text
+#: /xml/SkinSettings.xml
+msgctxt "#31508"
+msgid "TV Guide Text"
+msgstr ""
+
+#. Label for Radio Guide Text
+#: /xml/SkinSettings.xml
+msgctxt "#31509"
+msgid "Radio Guide Text"
+msgstr ""
+
+#. Label for TV Recordings Text
+#: /xml/SkinSettings.xml
+msgctxt "#31510"
+msgid "TV Recordings Text"
+msgstr ""
+
+#. Label for TV Timers Text
+#: /xml/SkinSettings.xml
+msgctxt "#31511"
+msgid "TV Timers Text"
+msgstr ""
+
+#. Label for TV Timer Rules Text
+#: /xml/SkinSettings.xml
+msgctxt "#31512"
+msgid "TV Timer Rules Text"
+msgstr ""
+
+#. Label for Red Colour Button
+#: xml/Variables.xml
+msgctxt "#31513"
+msgid "Red"
+msgstr ""
+
+#. Label for Green Colour Button
+#: xml/Variables.xml
+msgctxt "#31514"
+msgid "Green"
+msgstr ""
+
+#. Label for Yellow Colour Button
+#: xml/Variables.xml
+msgctxt "#31515"
+msgid "Yellow"
+msgstr ""
+
+#. Label for Blue Colour Button
+#: xml/Variables.xml
+msgctxt "#31516"
+msgid "Blue"
+msgstr ""
+
+#. Label for -12h Button
+#: xml/Variables.xml
+msgctxt "#31517"
+msgid "-12h"
+msgstr ""
+
+#. Label for +12h Button
+#: xml/Variables.xml
+msgctxt "#31518"
+msgid "+12h"
+msgstr ""
+
+#. Label for the PVR Button Tips section of Skin Settings
+#: xml/SkinSettings.xml
+msgctxt "#31519"
+msgid "PVR Button Tips"
+msgstr ""
+
+#. Label for the Group remote button tip
+#: xml/Variables.xml
+msgctxt "#31520"
+msgid "Group"
+msgstr ""
+
+#. Label for the Ungroup remote button tip
+#: xml/Variables.xml
+msgctxt "#31521"
+msgid "Ungroup"
+msgstr ""
+
+#. Label for the Tick remote button tip
+#: xml/Variables.xml
+msgctxt "#31522"
+msgid "Tick"
+msgstr ""
+
+#. Label for the Untick remote button tip
+#: xml/Variables.xml
+msgctxt "#31523"
+msgid "Untick"
+msgstr ""
+
 
 #: /xml/DialogPlayerProcessInfo.xml
 #. Label to show the video codec name
