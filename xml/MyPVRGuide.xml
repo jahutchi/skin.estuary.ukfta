@@ -227,9 +227,10 @@
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
 				<param name="sublabel" value="" />
 			</include>
-			<include content="BottomBar">
+			<include condition="!Skin.HasSetting(BottomBarColourButtonsEnabled)" content="BottomBar">
 				<param name="info_visible" value="true" />
 			</include>
+			<include condition="Skin.HasSetting(BottomBarColourButtonsEnabled)">BottomBarWithButtons</include>
 			<control type="group">
 				<include>MediaMenuCommon</include>
 				<include content="PVRSideBar">

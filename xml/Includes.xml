@@ -1304,6 +1304,153 @@
 			</control>
 		</control>
 	</include>
+	<!--JAH: Wrote this alternative bottom bar with button tips for the R,G,Y,B remote buttons -->
+	<include name="BottomBarWithButtons">
+		<param name="buttons_left">0</param>
+		<param name="buttons_right">0</param>
+		<param name="buttons_top">55</param> <!-- Bottom bar is 115 in height. This is the top position of the bar in relation to that. -->
+		<definition>
+			<control type="group">
+				<animation effect="slide" end="0,112" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+				<depth>DepthBars</depth>
+				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(visualisation) | Window.Next(screencalibration)">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup) | Window.Previous(visualisation)">WindowOpen</animation>
+				<height>115</height>
+				<bottom>0</bottom>
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>100%</width>
+					<height>115</height>
+					<texture flipy="true">frame/InfoBar.png</texture>
+				</control>
+				<!-- JAH: Custom Shortcut Button Tips -->
+				<control type="group">
+					<left>$PARAM[buttons_left]</left>
+					<right>$PARAM[buttons_right]</right>
+					<top>$PARAM[buttons_top]</top>
+					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+					<visible>!Skin.HasSetting(touchmode)</visible>
+					<visible>!System.HasModalDialog</visible>
+					<!-- Skip Forward and Skip Back Buttons -->
+					<control type="group">
+						<visible>Window.IsActive(MyPVRGuide.xml)</visible>
+						<control type="image">
+							<visible>!String.IsEmpty(Control.GetLabel(901))</visible>
+							<top>8</top>
+							<left>15</left>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio align="right" aligny="bottom">keep</aspectratio>
+							<texture background="true">icons/pvr/Skip.png</texture>
+						</control>
+						<control type="label" id="901">
+							<visible>!String.IsEmpty(Control.GetLabel(901))</visible>
+							<width>80</width>
+							<left>55</left>
+							<height>32</height>
+							<font>font30_title</font>
+							<wrapmultiline>false</wrapmultiline>
+							<label>$VAR[BottomBarSkipBackButtonText]</label>
+						</control>
+						<control type="label" id="902">
+							<visible>!String.IsEmpty(Control.GetLabel(902))</visible>
+							<width>80</width>
+							<right>55</right>
+							<height>32</height>
+							<font>font30_title</font>
+							<wrapmultiline>false</wrapmultiline>
+							<label>$VAR[BottomBarSkipForwardButtonText]</label>
+						</control>
+						<control type="image">
+							<visible>!String.IsEmpty(Control.GetLabel(902))</visible>
+							<top>8</top>
+							<right>15</right>
+							<width>32</width>
+							<height>32</height>
+							<aspectratio align="right" aligny="bottom">keep</aspectratio>
+							<texture flipx="true" background="true">icons/pvr/Skip.png</texture>
+						</control>
+					</control>
+					<!-- Red, Green, Yellow & Blue Buttons -->
+					<control type="grouplist">
+						<width>100%</width>
+						<height>45</height>
+						<orientation>horizontal</orientation>
+						<usecontrolcoords>true</usecontrolcoords>
+						<align>center</align>
+						<itemgap>7</itemgap>
+						<control type="image">
+							<visible>!String.IsEmpty(Control.GetLabel(903))</visible>
+							<top>8</top>
+							<width>70</width>
+							<height>32</height>
+							<aspectratio align="right" aligny="bottom">keep</aspectratio>
+							<texture background="true">$VAR[BottomBarColourButton1Image]</texture>
+						</control>
+						<control type="label" id="903">
+							<visible>!String.IsEmpty(Control.GetLabel(903))</visible>
+							<width>auto</width>
+							<height>32</height>
+							<font>font30_title</font>
+							<wrapmultiline>false</wrapmultiline>
+							<label>$VAR[BottomBarColourButton1Text]</label>
+						</control>
+						<control type="image">
+							<visible>!String.IsEmpty(Control.GetLabel(904))</visible>
+							<top>8</top>
+							<width>70</width>
+							<height>32</height>
+							<aspectratio align="right" aligny="bottom">keep</aspectratio>
+							<texture background="true">$VAR[BottomBarColourButton2Image]</texture>
+						</control>
+						<control type="label" id="904">
+							<visible>!String.IsEmpty(Control.GetLabel(904))</visible>
+							<width>auto</width>
+							<height>32</height>
+							<font>font30_title</font>
+							<wrapmultiline>false</wrapmultiline>
+							<label>$VAR[BottomBarColourButton2Text]</label>
+						</control>
+						<control type="image">
+							<visible>!String.IsEmpty(Control.GetLabel(905))</visible>
+							<top>8</top>
+							<width>70</width>
+							<height>32</height>
+							<aspectratio align="right" aligny="bottom">keep</aspectratio>
+							<texture background="true">$VAR[BottomBarColourButton3Image]</texture>
+						</control>
+						<control type="label" id="905">
+							<visible>!String.IsEmpty(Control.GetLabel(905))</visible>
+							<width>auto</width>
+							<height>32</height>
+							<font>font30_title</font>
+							<wrapmultiline>false</wrapmultiline>
+							<label>$VAR[BottomBarColourButton3Text]</label>
+						</control>
+						<control type="image">
+							<visible>!String.IsEmpty(Control.GetLabel(906))</visible>
+							<top>8</top>
+							<width>70</width>
+							<height>32</height>
+							<aspectratio align="right" aligny="bottom">keep</aspectratio>
+							<texture background="true">$VAR[BottomBarColourButton4Image]</texture>
+						</control>
+						<control type="label" id="906">
+							<visible>!String.IsEmpty(Control.GetLabel(906))</visible>
+							<width>auto</width>
+							<height>32</height>
+							<font>font30_title</font>
+							<wrapmultiline>false</wrapmultiline>
+							<label>$VAR[BottomBarColourButton4Text]</label>
+						</control>
+					</control>
+				</control>
+				<include>TouchButtons</include>
+			</control>
+		</definition>
+	</include>
 	<include name="FullScreenDimensions">
 		<left>0</left>
 		<top>0</top>
