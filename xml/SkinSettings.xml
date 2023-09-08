@@ -381,6 +381,265 @@
 					<enable>Skin.HasSetting(OSDAutoClose)</enable>
 				</control>
 			</control>
+			<control type="grouplist" id="690">
+				<top>160</top>
+				<left>0</left>
+				<right>0</right>
+				<bottom>140</bottom>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<onup>690</onup>
+				<pagecontrol>60</pagecontrol>
+				<ondown>690</ondown>
+				<visible>Container(9000).HasFocus(5)</visible>
+				<control type="radiobutton" id="69001">
+					<label>$LOCALIZE[31502]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(BottomBarColourButtonsEnabled)</selected>
+					<onclick>Skin.ToggleSetting(BottomBarColourButtonsEnabled)</onclick>
+				</control>
+				<control type="radiobutton" id="69002">
+					<label>$LOCALIZE[31503]</label>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="100" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<selected>Skin.HasSetting(BottomBarSkipButtonsEnabled)</selected>
+					<onclick>Skin.ToggleSetting(BottomBarSkipButtonsEnabled)</onclick>
+				</control>
+				<control type="button" id="69010">
+					<label>$LOCALIZE[31504]</label>
+					<label2>$VAR[BottomBarColourButton1ColourText]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="100" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton1),Red)">Skin.SetString(BottomBarColourButton1,Green)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(BottomBarColourButton1))">Skin.SetString(BottomBarColourButton1,Green)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton1),Green)">Skin.SetString(BottomBarColourButton1,Yellow)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton1),Yellow)">Skin.SetString(BottomBarColourButton1,Blue)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton1),Blue)">Skin.SetString(BottomBarColourButton1,Red)</onclick>
+				</control>
+				<control type="button" id="69011">
+					<label>$LOCALIZE[31508]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton1TVGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton1TVGuideText)</onclick>
+				</control>
+				<control type="button" id="69012">
+					<label>$LOCALIZE[31509]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton1RadioGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton1RadioGuideText)</onclick>
+				</control>
+				<control type="button" id="69013">
+					<label>$LOCALIZE[31510]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton1TVRecordingsText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton1TVRecordingsText)</onclick>
+				</control>
+				<control type="button" id="69014">
+					<label>$LOCALIZE[31511]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton1TVTimersText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton1TVTimersText)</onclick>
+				</control>
+				<control type="button" id="69015">
+					<label>$LOCALIZE[31512]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton1TVTimerRulesText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton1TVTimerRulesText)</onclick>
+				</control>
+				<control type="button" id="69020">
+					<label>$LOCALIZE[31505]</label>
+					<label2>$VAR[BottomBarColourButton2ColourText]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="100" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton2),Red)">Skin.SetString(BottomBarColourButton2,Green)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton2),Green)">Skin.SetString(BottomBarColourButton2,Yellow)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(BottomBarColourButton2))">Skin.SetString(BottomBarColourButton2,Yellow)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton2),Yellow)">Skin.SetString(BottomBarColourButton2,Blue)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton2),Blue)">Skin.SetString(BottomBarColourButton2,Red)</onclick>
+				</control>
+				<control type="button" id="69021">
+					<label>$LOCALIZE[31508]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton2TVGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton2TVGuideText)</onclick>
+				</control>
+				<control type="button" id="69022">
+					<label>$LOCALIZE[31509]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton2RadioGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton2RadioGuideText)</onclick>
+				</control>
+				<control type="button" id="69023">
+					<label>$LOCALIZE[31510]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton2TVRecordingsText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton2TVRecordingsText)</onclick>
+				</control>
+				<control type="button" id="69024">
+					<label>$LOCALIZE[31511]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton2TVTimersText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton2TVTimersText)</onclick>
+				</control>
+				<control type="button" id="69025">
+					<label>$LOCALIZE[31512]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton2TVTimerRulesText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton2TVTimerRulesText)</onclick>
+				</control>
+				<control type="button" id="69030">
+					<label>$LOCALIZE[31506]</label>
+					<label2>$VAR[BottomBarColourButton3ColourText]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="100" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton3),Red)">Skin.SetString(BottomBarColourButton3,Green)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton3),Green)">Skin.SetString(BottomBarColourButton3,Yellow)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton3),Yellow)">Skin.SetString(BottomBarColourButton3,Blue)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(BottomBarColourButton3))">Skin.SetString(BottomBarColourButton3,Blue)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton3),Blue)">Skin.SetString(BottomBarColourButton3,Red)</onclick>
+				</control>
+				<control type="button" id="69031">
+					<label>$LOCALIZE[31508]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton3TVGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton3TVGuideText)</onclick>
+				</control>
+				<control type="button" id="69032">
+					<label>$LOCALIZE[31509]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton3RadioGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton3RadioGuideText)</onclick>
+				</control>
+				<control type="button" id="69033">
+					<label>$LOCALIZE[31510]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton3TVRecordingsText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton3TVRecordingsText)</onclick>
+				</control>
+				<control type="button" id="69034">
+					<label>$LOCALIZE[31511]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton3TVTimersText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton3TVTimersText)</onclick>
+				</control>
+				<control type="button" id="69035">
+					<label>$LOCALIZE[31512]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton3TVTimerRulesText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton3TVTimerRulesText)</onclick>
+				</control>
+				<control type="button" id="69040">
+					<label>$LOCALIZE[31507]</label>
+					<label2>$VAR[BottomBarColourButton4ColourText]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="100" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton4),Red)">Skin.SetString(BottomBarColourButton4,Green)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton4),Green)">Skin.SetString(BottomBarColourButton4,Yellow)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton4),Yellow)">Skin.SetString(BottomBarColourButton4,Blue)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(BottomBarColourButton4),Blue)">Skin.SetString(BottomBarColourButton4,Red)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(BottomBarColourButton4))">Skin.SetString(BottomBarColourButton4,Red)</onclick>
+				</control>
+				<control type="button" id="69041">
+					<label>$LOCALIZE[31508]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton4TVGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton4TVGuideText)</onclick>
+				</control>
+				<control type="button" id="69042">
+					<label>$LOCALIZE[31509]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton4RadioGuideText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton4RadioGuideText)</onclick>
+				</control>
+				<control type="button" id="69043">
+					<label>$LOCALIZE[31510]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton4TVRecordingsText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton4TVRecordingsText)</onclick>
+				</control>
+				<control type="button" id="69044">
+					<label>$LOCALIZE[31511]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton4TVTimersText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton4TVTimersText)</onclick>
+				</control>
+				<control type="button" id="69045">
+					<label>$LOCALIZE[31512]</label>
+					<label2>$INFO[Skin.String(BottomBarColourButton4TVTimerRulesText)]</label2>
+					<include content="DefaultSettingButton">
+						<param name="textoffsetx" value="200" />
+					</include>
+					<enable>Skin.HasSetting(BottomBarColourButtonsEnabled)</enable>
+					<onclick>Skin.SetString(BottomBarColourButton4TVTimerRulesText)</onclick>
+				</control>
+			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
 				<left>0</left>
@@ -456,6 +715,10 @@
 					</item>
 					<item id="4">
 						<label>$LOCALIZE[31170]</label>
+						<onclick>noop</onclick>
+					</item>
+					<item id="5">
+						<label>$LOCALIZE[31519]</label>
 						<onclick>noop</onclick>
 					</item>
 				</content>
