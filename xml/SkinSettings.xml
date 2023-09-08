@@ -153,6 +153,18 @@
 					<selected>!Skin.HasSetting(home_no_categories_widget)</selected>
 					<onclick>Skin.ToggleSetting(home_no_categories_widget)</onclick>
 				</control>
+				<control type="radiobutton" id="618">
+					<label>$LOCALIZE[19020]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
+				</control>
+				<control type="button" id="6189">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuTVLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuTVLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="611">
 					<label>$LOCALIZE[342]</label>
 					<include>DefaultSettingButton</include>
@@ -173,6 +185,12 @@
 					<onclick>Skin.SelectBool(31176, 37015|movieset_onclick_browse, 13362|movieset_onclick_continuewatching, 12021|movieset_onclick_playfrombeginning, 10008|movieset_onclick_playnext, 13347|movieset_onclick_queue)</onclick>
 					<label2>$VAR[MovieSetOnClickActionLabel2Var]</label2>
 					<enable>!Skin.HasSetting(HomeMenuNoMovieButton)</enable>
+				</control>
+				<control type="button" id="6119">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuMoviesLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuMoviesLabel)</onclick>
 				</control>
 				<control type="radiobutton" id="612">
 					<label>$LOCALIZE[20343]</label>
@@ -195,6 +213,12 @@
 					<label2>$VAR[TVShowOnClickActionLabel2Var]</label2>
 					<enable>!Skin.HasSetting(HomeMenuNoTVShowButton)</enable>
 				</control>
+				<control type="button" id="6129">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuTVShowsLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuTVShowsLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="613">
 					<label>$LOCALIZE[2]</label>
 					<include>DefaultSettingButton</include>
@@ -216,17 +240,23 @@
 					<label2>$VAR[AlbumOnClickActionLabel2Var]</label2>
 					<enable>!Skin.HasSetting(HomeMenuNoMusicButton)</enable>
 				</control>
+				<control type="button" id="6138">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuMusicLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuMusicLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="6131">
 					<label>$LOCALIZE[20389]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoMusicVideoButton)</onclick>
 				</control>
-				<control type="radiobutton" id="618">
-					<label>$LOCALIZE[19020]</label>
+				<control type="button" id="6139">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuMusicVideosLabel]</label2>
 					<include>DefaultSettingButton</include>
-					<selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
-					<onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
+					<onclick>Skin.SetString(HomeMenuMusicVideosLabel)</onclick>
 				</control>
 				<control type="radiobutton" id="619">
 					<label>$LOCALIZE[19021]</label>
@@ -234,11 +264,29 @@
 					<selected>!Skin.HasSetting(HomeMenuNoRadioButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
 				</control>
+				<control type="button" id="6199">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuRadioLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuRadioLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="614">
 					<label>$LOCALIZE[24001]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
+				</control>
+				<control type="button" id="6149">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuAddonsLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuAddonsLabel)</onclick>
+				</control>
+				<control type="button" id="6149">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuAddonsLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuAddonsLabel)</onclick>
 				</control>
 				<control type="radiobutton" id="615">
 					<label>$LOCALIZE[1]</label>
@@ -246,11 +294,23 @@
 					<selected>!Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
 				</control>
+				<control type="button" id="6159">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuPicturesLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuPicturesLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="616">
 					<label>$LOCALIZE[3]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoVideosButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
+				</control>
+				<control type="button" id="6168">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuVideosLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuVideosLabel)</onclick>
 				</control>
 				<control type="radiobutton" id="620">
 					<label>$LOCALIZE[15016]</label>
@@ -259,17 +319,41 @@
 					<selected>!Skin.HasSetting(HomeMenuNoGamesButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoGamesButton)</onclick>
 				</control>
+				<control type="button" id="6209">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuGamesLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuGamesLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="6160">
 					<label>$LOCALIZE[10134]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoFavButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoFavButton)</onclick>
 				</control>
+				<control type="button" id="6169">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuFavouritesLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuFavouritesLabel)</onclick>
+				</control>
 				<control type="radiobutton" id="617">
 					<label>$LOCALIZE[8]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
+				</control>
+				<control type="button" id="6179">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuWeatherLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuWeatherLabel)</onclick>
+				</control>
+				<control type="button" id="6179">
+					<label>$LOCALIZE[31501]</label>
+					<label2>$VAR[HomeMenuWeatherLabel]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetString(HomeMenuWeatherLabel)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="622">
