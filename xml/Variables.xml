@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="HomeMenuTVLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuTVLabel))">$LOCALIZE[19020]</value>
+		<value>$INFO[Skin.String(HomeMenuTVLabel)]</value>
+	</variable>
+	<variable name="HomeMenuMoviesLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuMoviesLabel))">$LOCALIZE[342]</value>
+		<value>$INFO[Skin.String(HomeMenuMoviesLabel)]</value>
+	</variable>
+	<variable name="HomeMenuTVShowsLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuTVShowsLabel))">$LOCALIZE[20343]</value>
+		<value>$INFO[Skin.String(HomeMenuTVShowsLabel)]</value>
+	</variable>
+	<variable name="HomeMenuMusicLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuMusicLabel))">$LOCALIZE[2]</value>
+		<value>$INFO[Skin.String(HomeMenuMusicLabel)]</value>
+	</variable>
+	<variable name="HomeMenuMusicVideosLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuMusicVideosLabel))">$LOCALIZE[20389]</value>
+		<value>$INFO[Skin.String(HomeMenuMusicVideosLabel)]</value>
+	</variable>
+	<variable name="HomeMenuRadioLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuRadioLabel))">$LOCALIZE[19021]</value>
+		<value>$INFO[Skin.String(HomeMenuRadioLabel)]</value>
+	</variable>
+	<variable name="HomeMenuGamesLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuGamesLabel))">$LOCALIZE[15016]</value>
+		<value>$INFO[Skin.String(HomeMenuGamesLabel)]</value>
+	</variable>
+	<variable name="HomeMenuAddonsLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuAddonsLabel))">$LOCALIZE[24001]</value>
+		<value>$INFO[Skin.String(HomeMenuAddonsLabel)]</value>
+	</variable>
+	<variable name="HomeMenuPicturesLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuPicturesLabel))">$LOCALIZE[1]</value>
+		<value>$INFO[Skin.String(HomeMenuPicturesLabel)]</value>
+	</variable>
+	<variable name="HomeMenuVideosLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuVideosLabel))">$LOCALIZE[3]</value>
+		<value>$INFO[Skin.String(HomeMenuVideosLabel)]</value>
+	</variable>
+	<variable name="HomeMenuFavouritesLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuFavouritesLabel))">$LOCALIZE[10134]</value>
+		<value>$INFO[Skin.String(HomeMenuFavouritesLabel)]</value>
+	</variable>
+	<variable name="HomeMenuWeatherLabel">
+		<value condition="String.IsEmpty(Skin.String(HomeMenuWeatherLabel))">$LOCALIZE[8]</value>
+		<value>$INFO[Skin.String(HomeMenuWeatherLabel)]</value>
+	</variable>
 	<variable name="PVRStatusImageVar">
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
 		<value condition="ListItem.HasTimer | ListItem.HasTimerSchedule">windows/pvr/timer.png</value>

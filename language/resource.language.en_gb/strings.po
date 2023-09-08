@@ -860,6 +860,14 @@ msgstr ""
 
 #empty strings from id 31177 to 31599
 
+
+#. Label Text setting for Home Screen
+#: /xml/SkinSettings.xml
+msgctxt "#31501"
+msgid "- Label Text"
+msgstr ""
+
+
 #: /xml/DialogPlayerProcessInfo.xml
 #. Label to show the video codec name
 msgctxt "#31600"
