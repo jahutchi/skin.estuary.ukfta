@@ -1,44 +1,39 @@
-[B]0.8.5[/B]
-• Updated language files from Transifex
+skin.estuary.ukfta change log
+-----------------------------
 
-[B]0.8.3[/B]
-• Updated language files from Transifex
+Kodi Nexus Release
 
-[B]0.8.2[/B]
-• Updated language files from Transifex
+This is a slightly modified version of the default "Estuary" skin.
+Includes customisations related to UK Free-To-Air (FTA) networks (Freeview & Freesat).
+Also includes integration with the script.tvheadend.apiutils addon.
 
-[B]0.8.1[/B]
-• Updated language files from Transifex
-
-[B]0.7.13[/B]
-• Updated language files from Transifex
-
-[B]0.7.12[/B]
-• Updated language files from Transifex
-
-[B]0.7.11[/B]
-• Updated language files from Transifex
-
-[B]0.7.10[/B]
-• Updated language files from Transifex
-
-[B]0.7.8[/B]
-• Updated language files from Transifex
-
-[B]0.7.7[/B]
-• Updated language files from Transifex
-
-[B]0.7.3[/B]
-• Updated language files from Transifex
-
-[B]0.7.1[/B]
-• Updated language files from Transifex
-
-[B]0.6.2[/B]
-• Updated language files from Transifex
-
-[B]0.6.1[/B]
-• Updated language files from Transifex
-
-﻿[B]0.0.1[/B]
-• Initial commit
+v4.0.0: Initial release for Nexus, based on the standard esturary skin with the following customisations:
+  - [Fonts]: added fsme font and made this the default
+  - [Fonts]: the center-dot character is not available in the fsme font
+  - [Icons]: added custom freeview+freesat logo at the top of PVR-related windows
+  - [Icons]: added recording.png pvr icon for use on notification popups
+  - [Icons]: added downloading.png and downloaded.png for use on notification popups
+  - [Homescreen]: add custom mediacenter logo
+  - [Homescreen]: made the text of the menu items configurable
+  - [RemoteButtonTips]: added configurable remote button tips functionality
+  - [Breadcrumbs]: adjustments to the placement of breadcrumb labels and sub-labels in PVR-related windows
+  - [Breadcrumbs]: show only the channel category in the TV Guide and Radio Guide
+  - [Breadcrumbs]: show only the channel category in the TV Channels window
+  - [Breadcrumbs]: use the text 'TV Recordings' and 'Radio Recordings' in those windows
+  - [Breadcrumbs]: adjustments to the text used in the TV/Radio Timers and Timer Rules windows
+  - [TVGuide]: adjusted progress indicator with gradient shading
+  - [TVGuide]: use a wider time bar with dates at top and times below
+  - [TVGuide]: moved the EPG Grid up slightly
+  - [TVGuide]: added option to make the time blocks wider in the verticle epg grid
+  - [TVGuide]: added option to show icons instead of channel names
+  - [TVGuide]: added option to use a fixed colour in the epg instead of genre colours
+  - [TVGuide]: use slightly larger fonts
+  - [TVGuide]: added an 'Extra Actions' section to the side bar
+  - [TVRecordings]: always hide Episode Names in the list panels
+  - [Variables]: Season/Episode label adjusted from 'SXXEXX' to 'Season XX Episode XX'
+  - [TopBarOverlay]: Adjustments to the OSD sub-label for PVR
+  - [InfoSeekBar]: added the show title and start/end times for PVR
+  - [InfoSeekBar]: added network connection name and signal quality for LiveTV
+  - [InfoSeekBar]: use a PVR-style info bar for PVR Recordings
+  - [MediaMenu]: added extra button to run custom script to check for new videos
+  - [Films]: Added option to show US/UK certification rating icons for films
